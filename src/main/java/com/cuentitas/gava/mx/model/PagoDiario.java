@@ -47,12 +47,14 @@ public class PagoDiario {
         this.totalPago = totalPago;
     }
 
-    public int getIdEmpleado() {
-        return this.idEmpleado;
+
+    public Empleado getEmpleado() {
+        return this.empleado;
     }
 
-    public void setIdEmpleado(int idEmpleado) {
-        this.idEmpleado = idEmpleado;
+    public void setEmpleado(Empleado empleado) {
+        this.empleado = empleado;
     }
+    
     
 }
