@@ -24,7 +24,7 @@ public class PagoDiario {
 
     @ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "id_empleado", nullable = false)
-    private int idEmpleado;
+    private Empleado empleado;
 
     public PagoDiario() {
         PagoDiario pagoDiario;
