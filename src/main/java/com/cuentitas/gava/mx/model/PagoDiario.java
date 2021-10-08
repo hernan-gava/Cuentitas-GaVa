@@ -20,7 +20,7 @@ public class PagoDiario {
     private int idPago;
 
     @Column(name = "total_pago")
-    private String totalPago;
+    private double totalPago;
 
     @ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "id_empleado", nullable = false)
@@ -30,7 +30,6 @@ public class PagoDiario {
         PagoDiario pagoDiario;
     }
 
-
     public int getIdPago() {
         return this.idPago;
     }
@@ -38,15 +37,15 @@ public class PagoDiario {
     public void setIdPago(int idPago) {
         this.idPago = idPago;
     }
+    
 
-    public String getTotalPago() {
+    public double getTotalPago() {
         return this.totalPago;
     }
 
-    public void setTotalPago(String totalPago) {
+    public void setTotalPago(double totalPago) {
         this.totalPago = totalPago;
     }
-
 
     public Empleado getEmpleado() {
         return this.empleado;
