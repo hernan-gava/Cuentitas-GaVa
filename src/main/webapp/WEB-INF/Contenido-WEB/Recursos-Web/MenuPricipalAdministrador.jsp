@@ -3,45 +3,38 @@
     <div class="sidebar-sticky pt-3">
         <ul class="nav flex-column">
             <li class="nav-item">
-                <a class="nav-link" href="#">                    
-                    <span class="fas fa-suitcase-rolling"></span>
-                    Inversion Inicial
+                <a class="nav-link" href="#">
+                    <span class="fas fa-suitcase-rolling"></span> Inversion Inicial
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <span data-feather="file"></span>
-                    Proceso de inversion
+                    <span class="fas fa-file-invoice-dollar"></span> Proceso de inversion
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <span class="fas fa-cogs"></span>
-                    Registro de ventas
+                    <span class="fas fa-cogs"></span> Registro de ventas
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <span data-feather="users"></span>
-                    Pago de empleados por mes
+                    <span class="far fa-money-bill-alt"></span> Pago de empleados por mes
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <span data-feather="users"></span>
-                    Pago de empleados por dia
+                    <span class="fas fa-money-bill-alt"></span> Pago de empleados por dia
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <span data-feather="bar-chart-2"></span>
-                    Reporte de ventas acumuladas
+                    <span class="fas fa-hand-holding-usd"></span> Reporte de ventas acumuladas
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <span class="fas fa-chart-pie"></span>
-                    Grafica de comportamiento
+                    <span class="fas fa-chart-pie"></span> Grafica de comportamiento
                 </a>
             </li>
         </ul>
@@ -55,27 +48,22 @@
         <ul class="nav flex-column mb-2">
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <span class="fas fa-calendar-week"></span>
-                    Reporte mensual inversiones
+                    <span class="fas fa-calendar-week"></span> Reporte mensual inversiones
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <span class="fas fa-calendar"></span>
-                    Reporte mensual ventas
+                    <span class="fas fa-calendar"></span> Reporte mensual ventas
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <span class="fas fa-calendar-check"></span>
-                    Ventas acumuladas por fechas
+                    <span class="fas fa-calendar-check"></span> Ventas acumuladas por fechas
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <span
-                        class="far fa-calendar-alt"></span>
-                    Calendario
+                    <span class="far fa-calendar-alt"></span> Calendario
                 </a>
             </li>
         </ul>
