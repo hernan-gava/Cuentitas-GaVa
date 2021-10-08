@@ -2,8 +2,8 @@ package com.cuentitas.gava.mx.exceptions;
 
 import org.apache.commons.lang.exception.NestableException;
 
-public class InversionInicial extends NestableException{
-    public InversionInicial(String msg) {
+public class InversionInicialExceptions extends NestableException{
+    public InversionInicialExceptions(String msg) {
 		super(msg);
 	}
 }
