@@ -1,4 +1,4 @@
-package com.cuentitas.gava.mx.service.serviceImplement;
+package com.cuentitas.gava.mx.service.implement;
 
 import java.util.List;
 
