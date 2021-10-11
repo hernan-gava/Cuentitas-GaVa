@@ -15,7 +15,7 @@ import javax.persistence.Table;
 public class ProcesoInversiones {
         
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_proceso_inversion")
     private int idProcesoInversion;
 

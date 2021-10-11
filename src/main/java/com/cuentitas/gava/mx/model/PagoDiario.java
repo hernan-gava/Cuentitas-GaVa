@@ -15,7 +15,7 @@ import javax.persistence.Table;
 public class PagoDiario {
     
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_pago")
     private int idPago;
 
