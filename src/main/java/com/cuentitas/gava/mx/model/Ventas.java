@@ -1,5 +1,6 @@
 package com.cuentitas.gava.mx.model;
 
+import java.io.Serializable;
 import java.sql.*;
 
 import javax.persistence.Column;
@@ -11,7 +12,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "ventas")
-public class Ventas {
+public class Ventas implements Serializable{
     
 
     @Id

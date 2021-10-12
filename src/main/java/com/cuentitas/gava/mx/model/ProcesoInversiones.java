@@ -1,5 +1,6 @@
 package com.cuentitas.gava.mx.model;
 
+import java.io.Serializable;
 import java.sql.Date;
 
 import javax.persistence.Column;
@@ -12,7 +13,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "procesos_inversiones")
-public class ProcesoInversiones {
+public class ProcesoInversiones implements Serializable{
         
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

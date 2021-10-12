@@ -1,15 +1,20 @@
 package com.cuentitas.gava.mx.model;
 
+import java.io.Serializable;
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "empleados")
-public class Empleado {
+public class Empleado implements Serializable {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,6 +35,9 @@ public class Empleado {
 
     @Column(name = "monto_pago")
     private double montoPago;
+
+    @OneToMany(mappedBy="empleado",fetch = FetchType.LAZY)
+    private List<PagoDiario> pagoDiarios;
 
     public Empleado(){
         Empleado empleado;
@@ -82,4 +90,14 @@ public class Empleado {
     public void setMontoPago(double montoPago) {
         this.montoPago = montoPago;
     }
+
+    public List<PagoDiario> getPagoDiarios() {
+        return this.pagoDiarios;
+    }
+
+    public void setPagoDiarios(List<PagoDiario> pagoDiarios) {
+        this.pagoDiarios = pagoDiarios;
+    }
+
+
 }

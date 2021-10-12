@@ -1,8 +1,9 @@
 package com.cuentitas.gava.mx.model;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -12,7 +13,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "pago_diario")
-public class PagoDiario {
+public class PagoDiario implements Serializable{
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,7 +23,7 @@ public class PagoDiario {
     @Column(name = "total_pago")
     private double totalPago;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(optional = false)
 	@JoinColumn(name = "id_empleado", nullable = false)
     private Empleado empleado;
 
