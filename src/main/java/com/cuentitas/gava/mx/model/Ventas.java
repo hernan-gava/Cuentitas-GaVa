@@ -29,9 +29,7 @@ public class Ventas implements Serializable{
     @Column(name = "fecha")
     private Date fecha;
 
-    public Ventas() {
-        Ventas ventas;
-    }
+    public Ventas() {}
 
     public int getIdVentas() {
         return this.idVentas;

@@ -40,7 +40,7 @@ public class Empleado implements Serializable {
     private List<PagoDiario> pagoDiarios;
 
     public Empleado(){
-        Empleado empleado;
+        
     }
 
     public int getIdEmpleado() {

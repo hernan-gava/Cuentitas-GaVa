@@ -29,9 +29,7 @@ public class ProcesoInversiones implements Serializable{
     @Column(name = "fecha")
     private Date fecha;
 
-    public ProcesoInversiones() {
-        ProcesoInversiones  procesosInversiones;
-    }
+    public ProcesoInversiones() {}
 
     public int getIdProcesoInversion() {
         return this.idProcesoInversion;

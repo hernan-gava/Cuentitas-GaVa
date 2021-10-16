@@ -28,9 +28,7 @@ public class VentasFinales implements Serializable {
     @Column(name ="observaciones")
     private String observaciones;
 
-    public VentasFinales() {
-        VentasFinales ventasFinales;
-    }
+    public VentasFinales() {}
 
     public int getIdVentasFinales() {
         return this.idVentasFinales;

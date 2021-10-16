@@ -28,9 +28,7 @@ public class InversionInicial implements Serializable {
     @Column(name = "fecha")
     private Date fecha;
 
-    public InversionInicial(){
-        InversionInicial inversionInicial;
-    }    
+    public InversionInicial(){}    
 
     public int getIdInversionInicial() {
         return this.idInversionInicial;
