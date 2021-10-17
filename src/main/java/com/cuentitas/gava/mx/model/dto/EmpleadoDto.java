@@ -7,8 +7,7 @@ public class EmpleadoDto {
     private String apellidoMaterno;
     private String apellidoPaterno;
     private String direccion;
-    private double montoPago;
-
+    
     public int getIdEmpleado() {
         return this.idEmpleado;
     }    
@@ -28,9 +27,6 @@ public class EmpleadoDto {
     public String getDireccion() {
         return this.direccion;
     }
-
-    public double getMontoPago() {
-        return this.montoPago;
-    }
+  
         
 }
