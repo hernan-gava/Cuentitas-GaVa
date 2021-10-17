@@ -28,7 +28,7 @@ public class PagoDiario implements Serializable{
     private Empleado empleado;
 
     public PagoDiario() {
-        PagoDiario pagoDiario;
+        
     }
 
     public int getIdPago() {
@@ -54,7 +54,5 @@ public class PagoDiario implements Serializable{
 
     public void setEmpleado(Empleado empleado) {
         this.empleado = empleado;
-    }
-    
-    
+    }        
 }
