@@ -23,9 +23,9 @@ public class EmpleadoServiceImplement implements EmpleadoService {
     public void guardarEmpleado(Empleado empleado) throws EmpleadoExceptions {
         StringBuilder mensaje = new StringBuilder();
         try {
-            if (empleado.getNombre().trim().isEmpty() || empleado.getApellidoMaterno().trim().isEmpty() || empleado.getApellidoPaterno().trim().isEmpty() || empleado.getDireccion().trim().isEmpty() || empleado.getMontoPago()<0) {
+            if (empleado.getNombre().trim().isEmpty() || empleado.getApellidoMaterno().trim().isEmpty() || empleado.getApellidoPaterno().trim().isEmpty() || empleado.getDireccion().trim().isEmpty()) {
                 log.warn("EMPLEADO ERROR EN ATRIBUTOS VACIOS");
-                throw new EmpleadoExceptions("ATRIBUTOS VACIOS AL GUARDAR EMPLEADO"+ empleado.getNombre() + empleado.getApellidoMaterno() + empleado.getApellidoPaterno() + empleado.getDireccion() + empleado.getMontoPago());
+                throw new EmpleadoExceptions("ATRIBUTOS VACIOS AL GUARDAR EMPLEADO"+ empleado.getNombre() + empleado.getApellidoMaterno() + empleado.getApellidoPaterno() + empleado.getDireccion());
             }else{
                 empleadoReposiroty.save(empleado);
             }
