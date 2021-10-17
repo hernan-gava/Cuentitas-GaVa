@@ -31,13 +31,13 @@ public class Empleado implements Serializable {
     private String apellidoPaterno;
 
     @Column(name = "direccion")
-    private String direccion;
-
-    @Column(name = "monto_pago")
-    private double montoPago;
+    private String direccion;    
 
     @OneToMany(mappedBy="empleado",fetch = FetchType.LAZY)
     private List<PagoDiario> pagoDiarios;
+
+    @OneToMany(mappedBy="empleado",fetch = FetchType.LAZY)
+    private List<PagoMensuales> pagosMensuales;
 
     public Empleado(){
         
@@ -81,14 +81,6 @@ public class Empleado implements Serializable {
 
     public void setDireccion(String direccion) {
         this.direccion = direccion;
-    }
-
-    public double getMontoPago() {
-        return this.montoPago;
-    }
-
-    public void setMontoPago(double montoPago) {
-        this.montoPago = montoPago;
     }
 
     public List<PagoDiario> getPagoDiarios() {
