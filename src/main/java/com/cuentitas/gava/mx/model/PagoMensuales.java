@@ -1,5 +1,7 @@
 package com.cuentitas.gava.mx.model;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,7 +13,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="pago_mensual")
-public class PagoMensuales {
+public class PagoMensuales implements Serializable{
  
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
