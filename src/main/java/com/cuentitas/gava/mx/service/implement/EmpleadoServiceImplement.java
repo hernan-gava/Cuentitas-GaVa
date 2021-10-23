@@ -38,8 +38,8 @@ public class EmpleadoServiceImplement implements EmpleadoService {
     }
 
     @Override
-    public void eliminarEmpleado(Empleado empleado) throws EmpleadoExceptions {
-        empleadoReposiroty.delete(empleado);
+    public void eliminarEmpleado(Integer empleado) throws EmpleadoExceptions {
+        empleadoReposiroty.deleteById(empleado);
         
     }
 

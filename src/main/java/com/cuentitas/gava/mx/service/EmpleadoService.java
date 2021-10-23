@@ -9,7 +9,7 @@ public interface EmpleadoService {
 
     public void guardarEmpleado(Empleado empleado) throws EmpleadoExceptions;    
 
-    public void eliminarEmpleado(Empleado empleado) throws EmpleadoExceptions;
+    public void eliminarEmpleado(Integer empleado) throws EmpleadoExceptions;
 
     public List<Empleado> getListaEmpleado() throws EmpleadoExceptions;
 
