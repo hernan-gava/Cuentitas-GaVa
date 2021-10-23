@@ -18,6 +18,11 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="Registro-Empleados">
+                    <span class="fas fa-user-check"></span> Registro de Empleados
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="#">
                     <span class="far fa-money-bill-alt"></span> Pago de empleados por mes
                 </a>
