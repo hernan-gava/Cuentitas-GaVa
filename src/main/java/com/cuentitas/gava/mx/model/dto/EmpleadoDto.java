@@ -28,5 +28,16 @@ public class EmpleadoDto {
         return this.direccion;
     }
   
+
+    @Override
+    public String toString() {
+        return "{" +
+            " idEmpleado='" + getIdEmpleado() + "'" +
+            ", nombre='" + getNombre() + "'" +
+            ", apellidoMaterno='" + getApellidoMaterno() + "'" +
+            ", apellidoPaterno='" + getApellidoPaterno() + "'" +
+            ", direccion='" + getDireccion() + "'" +
+            "}";
+    }
         
 }

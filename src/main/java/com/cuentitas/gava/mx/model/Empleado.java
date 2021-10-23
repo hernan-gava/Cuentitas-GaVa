@@ -11,6 +11,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "empleados")
@@ -25,9 +26,11 @@ public class Empleado implements Serializable {
     private String nombre;
 
     @Column(name = "apellido_materno")
+    @NotNull(message = "Limite de pago no debe ir vacio")
     private String apellidoMaterno;
 
     @Column(name = "apellido_paterno")
+    @NotNull(message = "Limite de pago no debe ir vacio")
     private String apellidoPaterno;
 
     @Column(name = "direccion")
@@ -40,7 +43,7 @@ public class Empleado implements Serializable {
     private List<PagoMensuales> pagosMensuales;
 
     public Empleado(){
-        
+        Empleado empleado;
     }
 
     public int getIdEmpleado() {
@@ -89,6 +92,14 @@ public class Empleado implements Serializable {
 
     public void setPagoDiarios(List<PagoDiario> pagoDiarios) {
         this.pagoDiarios = pagoDiarios;
+    }
+
+    public List<PagoMensuales> getPagosMensuales() {
+        return this.pagosMensuales;
+    }
+
+    public void setPagosMensuales(List<PagoMensuales> pagosMensuales) {
+        this.pagosMensuales = pagosMensuales;
     }
 
 
